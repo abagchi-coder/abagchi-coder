@@ -27,6 +27,16 @@ class Goat implements Animal {
         System.out.println("bewww");
     }
 }
+class Cow implements Animal {
+    public void animalSound() {
+        // The body of animalSound() is provided here
+        System.out.println("The cow says: mooo");
+    }
+    public void sleep() {
+        // The body of sleep() is provided here
+        System.out.println("Zzz");
+    }
+}
 
 class InterfaceExample {
     public static void main(String[] args) {
@@ -37,5 +47,9 @@ class InterfaceExample {
         Goat newGoat = new Goat();
         newGoat.animalSound();
         newGoat.sleep();
+
+        Cow newCow = new Cow();
+        newCow.animalSound();
+        newCow.sleep();
     }
 }

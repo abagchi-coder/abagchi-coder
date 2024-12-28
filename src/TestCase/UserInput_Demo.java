@@ -9,5 +9,6 @@ public class UserInput_Demo {
 
         String userName = myObj.nextLine();  // Read user input
         System.out.println("Username is: " + userName);  // Output user input
+        myObj.close();
     }
 }
